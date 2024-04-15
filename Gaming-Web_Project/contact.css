@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header,Nav Bar */
+.con-1{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+.overlay {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, .7) 50%, rgba(0, 0, 0, .7) 50%);
+    background-size: 3px 3px;
+    z-index: -.999;
+}
+.nav-item{
+    padding: 3.5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.slider{
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    margin-left:130px;
+    width: 650px;
+}
+.head-1{
+    font-size: 60px;
+}
+.home:hover{
+    color: #28ABE3;
+}
+.home:hover,
+.home.active{
+    color: blueviolet;
+}
+.img-1{
+    height: 350px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .carousel-item.active{
+        height: auto;
+    }
+    .overlay{
+      height: 498px;
+    }
+    .carousel-item img{
+        height: 498px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .myslide img{
+        height: 498px;
+    }
+}
+/* Form */
+.input-group-text{
+    background-color: blueviolet;
+    color: #fff;
+}
+.btn-2{
+    height: 40px;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+}
+.btn-2:hover{
+    background-color: rgb(133, 3, 255);
+}
+input:hover{
+    border-color: blueviolet;
+}
+textarea:hover{
+    border-color: blueviolet;
+}
+textarea{
+    border: 0.1px solid rgb(224, 220, 220);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline;
+    padding: 10px 15px;
+}
+/* Share Icon */
+.buttons {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    width: fit-content;
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+  
+  .buttons:hover {
+    padding: 60px;
+  }
+  
+  .buttons:hover .button {
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .main-button {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: none;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    border-radius: 50%;
+    transition: 0.2s;
+    z-index: 100;
+  }
+  
+  .button {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: none;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+  
+  .discord-button:hover {
+    background: #5865F2;
+  }
+  
+  .buttons:hover .discord-button {
+    translate: 70px 0px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .twitter-button:hover {
+    background: #1CA1F1;
+  }
+  
+  .buttons:hover .twitter-button {
+    translate: 47px -47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .reddit-button:hover {
+    background: #FF4500;
+  }
+  
+  .buttons:hover .reddit-button {
+    translate: 0px -70px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .messenger-button:hover {
+    background: #0093FF;
+  }
+  
+  .buttons:hover .messenger-button {
+    translate: -47px -47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .pinterest-button:hover {
+    background: #F0002A;
+  }
+  
+  .buttons:hover .pinterest-button {
+    translate: -70px 0px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .instagram-button:hover {
+    background: #F914AF;
+  }
+  
+  .buttons:hover .instagram-button {
+    translate: -47px 47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .snapchat-button:hover {
+    background: #FFFC00;
+  }
+  
+  .buttons:hover .snapchat-button {
+    translate: 0px 70px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .whatsapp-button:hover {
+    background: #25D366;
+  }
+  
+  .buttons:hover .whatsapp-button {
+    translate: 47px 47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+/* Footer */
+.con-7 a{
+    text-decoration: none;
+    color:  rgb(176, 174, 174);
+    padding-bottom: 9px;
+    font-size: 14px;
+}
+.con-7 a:hover{
+    color: blueviolet;
+}
